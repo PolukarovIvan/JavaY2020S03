@@ -6,6 +6,22 @@ public class MovablePoint implements Movable{
     private int xSpeed;
     private int ySpeed;
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getxSpeed() {
+        return xSpeed;
+    }
+
+    public int getySpeed() {
+        return ySpeed;
+    }
+
     @Override
     public String toString() {
         return "MovablePoint{" +
