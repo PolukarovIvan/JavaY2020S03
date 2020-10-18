@@ -51,4 +51,5 @@ public abstract class Shape extends JFrame {
     }
 
     public abstract void printF(Graphics gr);
+
 }
