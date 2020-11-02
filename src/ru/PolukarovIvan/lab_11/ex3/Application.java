@@ -26,11 +26,13 @@ public class Application extends JFrame {
         JPanel frame = new JPanel();
         frame.setLayout(new FlowLayout());
 
-        JTextField textField1 = new JTextField("Font: ", 10);
-        frame.add(textField1);
+        JTextField fontChoosingField = new JTextField("Font: ", 10);
+        fontChoosingField.setEditable(false);
+        frame.add(fontChoosingField);
 
-        JTextField textField2 = new JTextField("Color: ", 10);
-        frame.add(textField2);
+        JTextField colorChoosingField = new JTextField("Color: ", 10);
+        colorChoosingField.setEditable(false);
+        frame.add(colorChoosingField);
 
         JComboBox fontChoosing = new JComboBox();
         fontChoosing.setEditable(true);
