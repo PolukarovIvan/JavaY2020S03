@@ -92,7 +92,7 @@ public class Game {
                 deck2.add2cards(card1, card2);
             }
             System.out.print("\nStep: " + steps + " Player 1: " + deck1.printDeck());
-            System.out.print("\nStep:" + steps + "  Player 2: " + deck2.printDeck());
+            System.out.print("\nStep: " + steps + "  Player 2: " + deck2.printDeck());
 
             steps += 1;
 
