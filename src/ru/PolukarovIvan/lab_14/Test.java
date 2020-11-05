@@ -20,7 +20,7 @@ public class Test {
         Search search = new Search(students, randomStudent, "recursive");
 
         int result = search.binarySearch();
-`
+
         System.out.println("Ans: " + students.get(result) + " Result: " + randomStudent.toString());
 
         search = new Search(students, randomStudent, "iteration");
