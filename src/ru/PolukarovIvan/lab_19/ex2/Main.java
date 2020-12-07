@@ -1,9 +1,6 @@
 package ru.PolukarovIvan.lab_19.ex2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +8,7 @@ public class Main {
         names[0] = "Ivan";
         names[1] = "Someone";
         names[2] = "Abraham";
-        ArrayList<Student> students = new ArrayList<Student>(3);
+        List<Student> students = new ArrayList<Student>(3);
 
         for (Student s : students) {
             System.out.println(s.toString());
@@ -38,8 +35,6 @@ public class Main {
 
         if(ans != null){
             System.out.println(ans.toString());
-        } else{
-            System.out.println("Not found!");
         }
 
 
