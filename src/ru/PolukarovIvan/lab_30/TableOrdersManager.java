@@ -1,9 +1,10 @@
 package ru.PolukarovIvan.lab_30;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TableOrdersManager implements OrdersManager {
+public class TableOrdersManager implements OrdersManager, Serializable {
 
     Map<Integer, Order> orderMap = new HashMap<>();
 

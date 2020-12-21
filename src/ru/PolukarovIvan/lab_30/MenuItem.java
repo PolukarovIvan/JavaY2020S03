@@ -1,6 +1,8 @@
 package ru.PolukarovIvan.lab_30;
 
-public class MenuItem {
+import java.io.Serializable;
+
+public class MenuItem implements Serializable {
     private int cost;
     private String name;
     private String description;

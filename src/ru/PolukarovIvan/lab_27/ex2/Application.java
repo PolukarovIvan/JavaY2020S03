@@ -1,4 +1,4 @@
-package ru.PolukarovIvan.lab_27.ex2_snake;
+package ru.PolukarovIvan.lab_27.ex2;
 
 import javax.swing.*;
 

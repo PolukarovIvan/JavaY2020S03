@@ -1,12 +1,12 @@
-package ru.PolukarovIvan.lab_30;
+package ru.PolukarovIvan.lab_32;
 
-import ru.PolukarovIvan.lab_19.ex2.SortByFullName;
+import ru.PolukarovIvan.lab_30.*;
 
-import java.sql.SQLOutput;
+import java.io.*;
 
-public class Test {
+public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         InternetOrder internetOrder = new InternetOrder();
         internetOrder.add(
                 new Drink(
@@ -50,8 +50,15 @@ public class Test {
         InternetOrdersManager ordersManager = new InternetOrdersManager();
         ordersManager.add(internetOrder);
 
-        System.out.println(ordersManager.ordersCostSummary());
-        System.out.println(internetOrder.toString());
-    }
+        FileOutputStream fileOutputStream = new FileOutputStream("test.dump");
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+        objectOutputStream.writeObject(ordersManager);
+        objectOutputStream.close();
 
+
+        FileInputStream fileInputStream = new FileInputStream("test.dump");
+        ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+        ordersManager = (InternetOrdersManager) objectInputStream.readObject();
+        objectInputStream.close();
+    }
 }

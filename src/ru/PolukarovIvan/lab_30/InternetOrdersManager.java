@@ -1,8 +1,9 @@
 package ru.PolukarovIvan.lab_30;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class InternetOrdersManager implements OrdersManager {
+public class InternetOrdersManager implements OrdersManager, Serializable {
 
     private static class Node {
         Node prev, next;

@@ -1,6 +1,8 @@
 package ru.PolukarovIvan.lab_30;
 
-public final class Address {
+import java.io.Serializable;
+
+public final class Address implements Serializable {
 
     private String cityName;
     private int zipCode;

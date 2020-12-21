@@ -1,9 +1,10 @@
 package ru.PolukarovIvan.lab_30;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class InternetOrder implements Order {
+public class InternetOrder implements Order, Serializable {
 
     @Override
     public String toString() {

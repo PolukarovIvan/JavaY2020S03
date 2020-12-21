@@ -2,7 +2,9 @@ package ru.PolukarovIvan.lab_30;
 
 import ru.PolukarovIvan.lab_26.ex2.LinkedQueue;
 
-public class ListNode {
+import java.io.Serializable;
+
+public class ListNode implements Serializable {
     ListNode next;
     ListNode prev;
     ListNode MenuItem;

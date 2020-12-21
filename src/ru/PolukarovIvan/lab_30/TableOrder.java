@@ -1,9 +1,10 @@
 package ru.PolukarovIvan.lab_30;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class TableOrder implements Order {
+public class TableOrder implements Order, Serializable {
 
     private Customer customer;
     private MenuItem[] items;
